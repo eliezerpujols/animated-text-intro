@@ -1,0 +1,115 @@
+/* ---------------------------
+
+   Primary Styles
+
+------------------------------ */
+body {
+  background: #c3a3f9;
+  font-family: "open-sans", sans-serif;
+}
+
+#intro {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ---------------------------
+
+   Intro Styles
+
+------------------------------ */
+.intro__title {
+  position: relative;
+  -webkit-transform: translateY(0.4em);
+  transform: translateY(0.4em);
+  -webkit-animation: zigzag 2s ease-in-out infinite;
+  animation: zigzag 2s ease-in-out infinite;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e9f0a0;
+}
+.intro__title::before {
+  content: "css3";
+  position: absolute;
+  top: 0.2em;
+  left: -0.6em;
+  transform: rotate(-20deg);
+  font-family: "merienda";
+  font-size: 0.4em;
+  color: #fff;
+}
+@media (min-width: 48em) {
+  .intro__title {
+    font-size: 4em;
+  }
+}
+
+.intro__shadow {
+  -webkit-transform: translateY(0.8em);
+  transform: translateY(0.8em);
+  -webkit-animation: zoom 2s ease-in-out infinite;
+  animation: zoom 2s ease-in-out infinite;
+  width: 22em;
+  height: 3em;
+  background-image: radial-gradient(rgba(63, 56, 66, 0.2), transparent 40%, transparent);
+  opacity: 0.2;
+}
+@media (min-width: 48em) {
+  .intro__shadow {
+    width: 25em;
+    height: 4em;
+  }
+}
+
+@-webkit-keyframes zigzag {
+  0%,
+   100% {
+    -webkit-transform: translateY(0.4em);
+    transform: translateY(0.4em);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes zigzag {
+  0%,
+   100% {
+    -webkit-transform: translateY(0.4em);
+    transform: translateY(0.4em);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes zoom {
+  0%,
+   100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+@keyframes zoom {
+  0%,
+   100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

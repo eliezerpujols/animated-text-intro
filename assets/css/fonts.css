@@ -1,0 +1,23 @@
+/* Open Sans */
+@font-face {
+   font-family: "open-sans";
+   src: url("../fonts/OpenSans-Regular.ttf") format(truetype);
+}
+
+@font-face {
+   font-family: "open-sans";
+   font-weight: bold;
+   src: url("../fonts/OpenSans-Bold.ttf") format(truetype);
+}
+
+/* Merienda */
+@font-face {
+   font-family: "merienda";
+   src: url("../fonts/Merienda-Regular.ttf") format(truetype);
+}
+
+@font-face {
+   font-family: "merienda";
+   font-weight: bold;
+   src: url("../fonts/Merienda-Bold.ttf") format(truetype);
+}
